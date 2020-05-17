@@ -1,7 +1,10 @@
 {
-  "name": "backend-project-lvl1",
+  "name": "backend-project-lvl1-shulga",
   "version": "1.0.0",
   "description": "",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +18,6 @@
   "bugs": {
     "url": "https://github.com/shulga1/backend-project-lvl1/issues"
   },
+  "type": "module",
   "homepage": "https://github.com/shulga1/backend-project-lvl1#readme"
 }
