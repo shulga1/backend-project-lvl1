@@ -1,6 +1,6 @@
 {
   "name": "backend-project-lvl1-shulga",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "",
   "bin": {
     "brain-games": "bin/brain-games.js"
@@ -21,6 +21,9 @@
   "type": "module",
   "homepage": "https://github.com/shulga1/backend-project-lvl1#readme",
   "dependencies": {
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "readline-sync": "^1.4.10"
   }
 }
