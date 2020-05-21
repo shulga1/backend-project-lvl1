@@ -7,5 +7,3 @@ export default () => {
 
   console.log(`Hello, ${name}!`);
 };
-
-const a;
