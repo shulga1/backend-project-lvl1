@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import greeting from './src/cli.js';
+import greeting from './cli.js';
 
 const engineGame = (description, funct) => {
   const userName = greeting();
