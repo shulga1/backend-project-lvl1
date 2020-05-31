@@ -15,3 +15,9 @@
 
 ### Пример игры brain-calc
 [![asciicast](https://asciinema.org/a/6PWZwo5r1gv3Iyw9yUoBY4TVg.svg)](https://asciinema.org/a/6PWZwo5r1gv3Iyw9yUoBY4TVg)
+
+## $ brain-gcd // игра "наибольший общий делитель"
+Пользователю показывается два случайных числа, нужно найти наибольший общий делитель и записать правильный ответ.
+
+### Пример игры brain-gcd
+[![asciicast](https://asciinema.org/a/HmxMxB5l3K1OwCpe9xQSkpVPC.svg)](https://asciinema.org/a/HmxMxB5l3K1OwCpe9xQSkpVPC)
