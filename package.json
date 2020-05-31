@@ -1,9 +1,11 @@
 {
   "name": "backend-project-lvl1-shulga",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "bin": {
-    "brain-even": "bin/brain-even.js"
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-calc": "bin/brain-calc.js"
   },
   "main": "index.js",
   "scripts": {
