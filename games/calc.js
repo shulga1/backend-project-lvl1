@@ -4,7 +4,7 @@ import engineGame from '../src/index.js';
 const description = 'What is the result of the expression?';
 
 const calculator = () => {
-  const coll = ['-', '+', '*'];
+  const coll = ['-', '*', '+'];
 
   const firstNum = getRandomNumber();
   const secondNum = getRandomNumber();
@@ -12,16 +12,17 @@ const calculator = () => {
 
   let correctAnswer = 0;
 
-  if (getOperator === '-') {
-    correctAnswer = firstNum - secondNum;
-  }
+  switch (getOperator) {
+    case '-':
+      correctAnswer = firstNum - secondNum;
+      break;
 
-  if (getOperator === '+') {
-    correctAnswer = firstNum + secondNum;
-  }
+    case '*':
+      correctAnswer = firstNum * secondNum;
+      break;
 
-  if (getOperator === '*') {
-    correctAnswer = firstNum * secondNum;
+    default:
+      correctAnswer = firstNum + secondNum;
   }
 
   correctAnswer = String(correctAnswer);
