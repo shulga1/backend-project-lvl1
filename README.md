@@ -2,8 +2,12 @@
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
 ![](https://github.com/shulga1/backend-project-lvl1/workflows/NodeCI/badge.svg)
 
+## Install
+npm link
+
 ## Description
 Набор консольных игр, где игроку предлагается ответить на три вопроса. Ответив правильно на все вопросы, игрок побеждает. Ошибка в ответе на любой вопрос завершает игру.
+
 ## $ brain-even // игра "проверка на чётность"
 Игроку показывается случайное число. Ему нужно ответить yes, если число чётное, или no — если нечётное.
 
