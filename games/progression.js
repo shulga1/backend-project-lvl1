@@ -6,11 +6,11 @@ const description = 'What number is missing in the progression?';
 const progression = () => {
   const startNum = getRandomNumber(20);
   const sizeStep = getRandomNumber(10);
-  const countSteps = 10;
+  const stepsCount = 10;
 
   const arthmProgression = [startNum];
 
-  for (let step = 0; step < countSteps; step += 1) {
+  for (let step = 0; step < stepsCount; step += 1) {
     arthmProgression.push(arthmProgression[step] + sizeStep);
   }
 
@@ -25,6 +25,6 @@ const progression = () => {
   return { question, correctAnswer };
 };
 
-const game = () => engineGame(description, progression);
+const runGame = () => engineGame(description, progression);
 
-export default game;
+export default runGame;

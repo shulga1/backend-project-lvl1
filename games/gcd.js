@@ -26,6 +26,6 @@ const gsd = () => {
   return { question, correctAnswer };
 };
 
-const game = () => engineGame(description, gsd);
+const runGame = () => engineGame(description, gsd);
 
-export default game;
+export default runGame;

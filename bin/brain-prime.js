@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import game from '../games/prime.js';
+import runGame from '../games/prime.js';
 
-game();
+runGame();

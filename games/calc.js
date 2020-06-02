@@ -4,11 +4,11 @@ import engineGame from '../src/index.js';
 const description = 'What is the result of the expression?';
 
 const calculator = () => {
-  const coll = ['-', '*', '+'];
+  const operators = ['-', '*', '+'];
 
   const firstNum = getRandomNumber();
   const secondNum = getRandomNumber();
-  const getOperator = coll[getRandomNumber(2)];
+  const getOperator = operators[getRandomNumber(2)];
 
   let correctAnswer = 0;
 
@@ -32,6 +32,6 @@ const calculator = () => {
   return { question, correctAnswer };
 };
 
-const game = () => engineGame(description, calculator);
+const runGame = () => engineGame(description, calculator);
 
-export default game;
+export default runGame;

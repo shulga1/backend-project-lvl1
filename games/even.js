@@ -14,6 +14,6 @@ const even = () => {
   return { question, correctAnswer };
 };
 
-const game = () => engineGame(description, even);
+const runGame = () => engineGame(description, even);
 
-export default game;
+export default runGame;

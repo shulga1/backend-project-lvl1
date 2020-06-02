@@ -22,12 +22,12 @@ const isPrime = (num) => {
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const progression = () => {
+const prime = () => {
   const question = getRandomNumber();
   const correctAnswer = isPrime(question);
   return { question, correctAnswer };
 };
 
-const game = () => engineGame(description, progression);
+const game = () => engineGame(description, prime);
 
 export default game;
