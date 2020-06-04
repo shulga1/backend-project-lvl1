@@ -1,5 +1,5 @@
-import getRandomNumber from '../src/utilits.js';
-import engineGame from '../src/index.js';
+import getRandomNumber from '../utilits.js';
+import engineGame from '../index.js';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -28,6 +28,6 @@ const prime = () => {
   return { question, correctAnswer };
 };
 
-const game = () => engineGame(description, prime);
+const runGame = () => engineGame(description, prime);
 
-export default game;
+export default runGame;

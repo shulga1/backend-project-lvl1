@@ -1,5 +1,5 @@
-import getRandomNumber from '../src/utilits.js';
-import engineGame from '../src/index.js';
+import getRandomNumber from '../utilits.js';
+import engineGame from '../index.js';
 
 const getGreatestCommonDivisor = (firstNum, secondNum) => {
   const minNum = Math.min(firstNum, secondNum);
