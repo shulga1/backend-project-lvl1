@@ -4,8 +4,8 @@ import engineGame from '../index.js';
 const description = 'What number is missing in the progression?';
 
 const progression = () => {
-  const startNum = getRandomNumber(20);
-  const sizeStep = getRandomNumber(10);
+  const startNum = getRandomNumber(0, 20);
+  const sizeStep = getRandomNumber(1, 10);
   const stepsCount = 10;
 
   const arthmProgression = [startNum];
@@ -14,7 +14,7 @@ const progression = () => {
     arthmProgression.push(arthmProgression[step] + sizeStep);
   }
 
-  const getFieldHidenNumber = getRandomNumber(10);
+  const getFieldHidenNumber = getRandomNumber(0, 10);
 
   const correctAnswer = String(arthmProgression[getFieldHidenNumber]);
   const hideField = '..';

@@ -1,12 +1,14 @@
 import readlineSync from 'readline-sync';
 import greet from './cli.js';
 
+const roundsCount = 3;
+
 const engineGame = (description, game) => {
   const userName = greet();
 
   console.log(description);
 
-  for (let index = 0; index < 3; index += 1) {
+  for (let round = 0; round < roundsCount; round += 1) {
     const getData = game();
     const { question, correctAnswer } = getData;
 

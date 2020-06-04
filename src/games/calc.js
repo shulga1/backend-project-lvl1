@@ -8,7 +8,7 @@ const calculator = () => {
 
   const firstNum = getRandomNumber();
   const secondNum = getRandomNumber();
-  const getOperator = operators[getRandomNumber(2)];
+  const getOperator = operators[getRandomNumber(0, 2)];
 
   let correctAnswer = 0;
 

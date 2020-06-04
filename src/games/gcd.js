@@ -14,8 +14,8 @@ const getGreatestCommonDivisor = (firstNum, secondNum) => {
 const description = 'Find the greatest common divisor of given numbers.';
 
 const gsd = () => {
-  const firstNum = getRandomNumber(1000);
-  const secondNum = getRandomNumber(1000);
+  const firstNum = getRandomNumber(0, 1000);
+  const secondNum = getRandomNumber(0, 1000);
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = String(getGreatestCommonDivisor(firstNum, secondNum));
 
