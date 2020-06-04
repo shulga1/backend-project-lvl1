@@ -3,15 +3,15 @@ import engineGame from '../index.js';
 
 const isPrime = (num) => {
   if (num < 2) {
-    return 'no';
+    return false;
   }
 
   const iter = (div) => {
     if (div === num) {
-      return 'yes';
+      return true;
     }
     if (num % div === 0) {
-      return 'no';
+      return false;
     }
 
     return iter(div + 1);
@@ -24,7 +24,7 @@ const description = 'Answer "yes" if given number is prime. Otherwise answer "no
 
 const prime = () => {
   const question = getRandomNumber();
-  const correctAnswer = isPrime(question);
+  const correctAnswer = isPrime(question) ? 'yes' : 'no';
   return { question, correctAnswer };
 };
 
