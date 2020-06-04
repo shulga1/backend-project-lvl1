@@ -1,10 +1,15 @@
 import readlineSync from 'readline-sync';
-import greet from './cli.js';
 
 const roundsCount = 3;
 
 const engineGame = (description, game) => {
-  const userName = greet();
+  console.log('Welcome to the Brain Games!');
+
+  const userName = readlineSync.question('May I have your name? ', {
+    defaultInput: 'Anonymous',
+  });
+
+  console.log(`Hello, ${userName}!`);
 
   console.log(description);
 
