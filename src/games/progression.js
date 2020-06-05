@@ -3,7 +3,7 @@ import engineGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const progression = () => {
+const genQuestionAnswer = () => {
   const startNum = getRandomNumber(0, 20);
   const sizeStep = getRandomNumber(1, 10);
   const stepsCount = 10;
@@ -25,6 +25,6 @@ const progression = () => {
   return { question, correctAnswer };
 };
 
-const runGame = () => engineGame(description, progression);
+const runGame = () => engineGame(description, genQuestionAnswer);
 
 export default runGame;

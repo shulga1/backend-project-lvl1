@@ -13,19 +13,19 @@ const getGreatestCommonDivisor = (firstNum, secondNum) => {
 
 const description = 'Find the greatest common divisor of given numbers.';
 
-const gsd = () => {
+const genQuestionAnswer = () => {
   const firstNum = getRandomNumber(0, 1000);
   const secondNum = getRandomNumber(0, 1000);
   const question = `${firstNum} ${secondNum}`;
   const correctAnswer = String(getGreatestCommonDivisor(firstNum, secondNum));
 
   if (correctAnswer === '1') {
-    return gsd();
+    return genQuestionAnswer();
   }
 
   return { question, correctAnswer };
 };
 
-const runGame = () => engineGame(description, gsd);
+const runGame = () => engineGame(description, genQuestionAnswer);
 
 export default runGame;
