@@ -3,9 +3,9 @@ import engineGame from '../index.js';
 
 const description = 'What is the result of the expression?';
 
-const calculator = () => {
-  const operators = ['-', '*', '+'];
+const operators = ['-', '*', '+'];
 
+const calculator = () => {
   const firstNum = getRandomNumber();
   const secondNum = getRandomNumber();
   const getOperator = operators[getRandomNumber(0, 2)];
