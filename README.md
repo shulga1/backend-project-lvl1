@@ -1,6 +1,6 @@
 # Brain games
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-![](https://github.com/shulga1/backend-project-lvl1/workflows/NodeCI/badge.svg)
+<a href="https://codeclimate.com/github/shulga1/backend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/ba5fb58a0d4cdd0ec7dc/maintainability" /></a>
+<a href="https://github.com/shulga1/backend-project-lvl1/actions"><img src="https://github.com/shulga1/backend-project-lvl1/workflows/NodeCI/badge.svg"/></a>
 
 ## Install
 npm link
