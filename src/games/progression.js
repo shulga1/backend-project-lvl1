@@ -1,30 +1,35 @@
 import getRandomNumber from '../utilits.js';
-import engineGame from '../index.js';
+import runEngineGame from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
-const genQuestionAnswer = () => {
+const progressionLength = 10;
+
+const getProgression = () => {
   const startNum = getRandomNumber(0, 20);
-  const sizeStep = getRandomNumber(1, 10);
-  const stepsCount = 10;
+  const progressionStep = getRandomNumber(1, 10);
 
-  const arthmProgression = [startNum];
+  const progression = [startNum];
 
-  for (let step = 0; step < stepsCount; step += 1) {
-    arthmProgression.push(arthmProgression[step] + sizeStep);
+  for (let index = 0; index < progressionLength; index += 1) {
+    progression.push(progression[index] + progressionStep);
   }
+  return progression;
+};
 
-  const getFieldHidenNumber = getRandomNumber(0, 10);
+const genQuestionAnswer = () => {
+  const progression = getProgression();
+  const hiddenElemntIndex = getRandomNumber(0, 10);
 
-  const correctAnswer = String(arthmProgression[getFieldHidenNumber]);
+  const correctAnswer = String(progression[hiddenElemntIndex]);
   const hideField = '..';
-  arthmProgression[getFieldHidenNumber] = hideField;
+  progression[hiddenElemntIndex] = hideField;
 
-  const question = arthmProgression.join(' ');
+  const question = progression.join(' ');
 
   return { question, correctAnswer };
 };
 
-const runGame = () => engineGame(description, genQuestionAnswer);
+const runGame = () => runEngineGame(description, genQuestionAnswer);
 
 export default runGame;

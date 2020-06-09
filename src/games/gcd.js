@@ -1,14 +1,12 @@
 import getRandomNumber from '../utilits.js';
-import engineGame from '../index.js';
+import runEngineGame from '../index.js';
 
 const getGreatestCommonDivisor = (firstNum, secondNum) => {
-  const minNum = Math.min(firstNum, secondNum);
-  const maxNum = Math.max(firstNum, secondNum);
-
-  if (maxNum % minNum === 0) {
-    return minNum;
+  if (secondNum === 0) {
+    return firstNum;
   }
-  return getGreatestCommonDivisor(maxNum % minNum, minNum);
+
+  return getGreatestCommonDivisor(secondNum, firstNum % secondNum);
 };
 
 const description = 'Find the greatest common divisor of given numbers.';
@@ -26,6 +24,6 @@ const genQuestionAnswer = () => {
   return { question, correctAnswer };
 };
 
-const runGame = () => engineGame(description, genQuestionAnswer);
+const runGame = () => runEngineGame(description, genQuestionAnswer);
 
 export default runGame;
