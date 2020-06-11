@@ -5,21 +5,27 @@ const description = 'What number is missing in the progression?';
 
 const progressionLength = 10;
 
-const getProgression = () => {
-  const startNum = getRandomNumber(0, 20);
-  const progressionStep = getRandomNumber(1, 10);
+const getProgression = (firstElement, progressionStep, progressLength) => {
+  const progression = [];
 
-  const progression = [startNum];
-
-  for (let index = 0; index < progressionLength; index += 1) {
-    progression.push(progression[index] + progressionStep);
+  for (let index = 0; index < progressLength; index += 1) {
+    const currentElemement = firstElement + index * progressionStep;
+    progression.push(currentElemement);
   }
+
   return progression;
 };
 
+const getGameData = () => {
+  const firstElement = getRandomNumber(1, 20);
+  const progressionStep = getRandomNumber(1, 10);
+
+  return getProgression(firstElement, progressionStep, progressionLength);
+};
+
 const genQuestionAnswer = () => {
-  const progression = getProgression();
-  const hiddenElemntIndex = getRandomNumber(0, 10);
+  const progression = getGameData();
+  const hiddenElemntIndex = getRandomNumber(1, progressionLength) - 1;
 
   const correctAnswer = String(progression[hiddenElemntIndex]);
   const hideField = '..';
