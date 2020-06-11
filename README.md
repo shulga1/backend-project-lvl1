@@ -30,10 +30,10 @@ npm link
 Игроку показывается ряд чисел, образующий арифметическую прогрессию. Случайное число заменено двумя точками. Игрок должен определить это число.
 
 ### Пример игры brain-progression
-[![asciicast](https://asciinema.org/a/ZPdW3grp77Wg2zJompTs9sKi3.svg)](https://asciinema.org/a/ZPdW3grp77Wg2zJompTs9sKi3)
+[![asciicast](https://asciinema.org/a/72UHDEm2jA4hsULlcpbXZIHxF.svg)](https://asciinema.org/a/72UHDEm2jA4hsULlcpbXZIHxF)
 
 ### $ brain-prime // "Простое ли число?"
 Игроку показывается случайное число. Ему нужно ответить 'yes' если число простое и 'no' если нет.
 
 ### Пример игры brain-prime
-[![asciicast](https://asciinema.org/a/NHkUEBloEneOxirpZ1wgPl5WD.svg)](https://asciinema.org/a/NHkUEBloEneOxirpZ1wgPl5WD)
+[![asciicast](https://asciinema.org/a/cm65R5AiDYkdTvlVyrrmke5H6.svg)](https://asciinema.org/a/cm65R5AiDYkdTvlVyrrmke5H6)
